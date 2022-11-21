@@ -20,8 +20,6 @@ const SubmitForm = ({ prevStep, nextStep, handleChange, values }) => {
 
   let handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log("##############" + values.firstName);
     try {
       let res = await fetch("https://project-kentucky.herokuapp.com/kentucky", {
         method: "POST",
