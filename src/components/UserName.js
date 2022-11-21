@@ -7,7 +7,7 @@ import {
   Button,
 } from "@material-ui/core";
 
-export const UserDetails = ({ nextStep, handleChange, values }) => {
+export const UserName = ({ nextStep, handleChange, values }) => {
   // for continue event listener
   const Continue = (e) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ export const UserDetails = ({ nextStep, handleChange, values }) => {
             <Grid item xs={12}>
               <TextField
                 placeholder="firstName"
-                label="firstName"
+                label="first name"
                 onChange={handleChange("firstName")}
                 defaultValue={values.firstName}
                 autoComplete="firstName"
@@ -38,7 +38,7 @@ export const UserDetails = ({ nextStep, handleChange, values }) => {
             <Grid item xs={12}>
               <TextField
                 placeholder="middleName"
-                label="middleName"
+                label="middle name"
                 onChange={handleChange("middleName")}
                 defaultValue={values.middleName}
                 autoComplete="middleName"
@@ -50,7 +50,7 @@ export const UserDetails = ({ nextStep, handleChange, values }) => {
             <Grid item xs={12}>
               <TextField
                 placeholder="lastName"
-                label="lastName"
+                label="last name"
                 onChange={handleChange("lastName")}
                 defaultValue={values.lastName}
                 autoComplete="lastName"
@@ -75,4 +75,4 @@ export const UserDetails = ({ nextStep, handleChange, values }) => {
   );
 };
 
-export default UserDetails;
+export default UserName;
