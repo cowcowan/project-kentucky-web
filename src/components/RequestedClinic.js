@@ -31,7 +31,7 @@ const UserAddress = ({ prevStep, nextStep, handleChange, values }) => {
               <TextField
                 placeholder="Requested Clinic"
                 label="Clinic name"
-                onChange={handleChange("RequestedClinic")}
+                onChange={handleChange("requestedClinic")}
                 defaultValue={values.requestedClinic}
                 autoComplete="Requested Clinic"
                 fullWidth

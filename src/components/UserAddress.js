@@ -28,11 +28,11 @@ const UserAddress = ({ prevStep, nextStep, handleChange, values }) => {
           {/* Address */}
           <Grid item xs={12}>
             <TextField
-              placeholder="Address"
-              label="Address"
-              onChange={handleChange("address")}
-              defaultValue={values.address}
-              autoComplete="address"
+              placeholder="street"
+              label="street"
+              onChange={handleChange("street")}
+              defaultValue={values.street}
+              autoComplete="street"
               fullWidth
             />
           </Grid>
@@ -61,8 +61,8 @@ const UserAddress = ({ prevStep, nextStep, handleChange, values }) => {
             <Grid item xs={12} sm={4}>
               <TextField
                 placeholder="Zip code"
-                label="Zip cde"
-                onChange={handleChange("zip code")}
+                label="Zip code"
+                onChange={handleChange("zipcode")}
                 defaultValue={values.zipcode}
               />
             </Grid>

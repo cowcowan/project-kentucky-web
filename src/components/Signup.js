@@ -4,6 +4,7 @@ import UserEmail from "./UserEmail";
 import UserAddress from "./UserAddress";
 import Success from "./Success";
 import RequestedClinic from "./RequestedClinic";
+import SubmitForm from "./SubmitForm";
 export default class Signup extends Component {
   state = {
     step: 1,
@@ -42,7 +43,7 @@ export default class Signup extends Component {
       firstName,
       middleName,
       lastName,
-      address,
+      street,
       city,
       state,
       zipcode,
@@ -54,7 +55,7 @@ export default class Signup extends Component {
       firstName,
       middleName,
       lastName,
-      address,
+      street,
       city,
       state,
       zipcode,
@@ -122,6 +123,15 @@ export default class Signup extends Component {
           />
         );
       case 5:
+        return (
+          <SubmitForm
+            prevStep={this.prevStep}
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 6:
         return (
           <div className="App">
             <form onSubmit={handleSubmit}>
