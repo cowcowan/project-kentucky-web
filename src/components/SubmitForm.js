@@ -35,6 +35,8 @@ const SubmitForm = ({ prevStep, nextStep, handleChange, values }) => {
           zipcode: values.zipcode,
           requestedClinic: values.requestedClinic,
           dob: values.dob,
+          timeframe: values.timeframe,
+          requestOwnRecord: values.requestOwnRecord,
         }),
       });
       if (res.status === 201) {

@@ -34,7 +34,7 @@ const RequestDetails1 = ({ prevStep, nextStep, handleChange, values }) => {
                 label="timeframe"
                 onChange={handleChange("timeframe")}
                 defaultValue={values.timeframe}
-                autoComplete=""
+                autoComplete="timeframe"
                 fullWidth
               />
             </Grid>
