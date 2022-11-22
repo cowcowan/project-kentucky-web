@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import UserName from "./UserName";
 import UserEmail from "./UserEmail";
 import UserAddress from "./UserAddress";
-import Success from "./Success";
 import RequestedClinic from "./RequestedClinic";
 import SubmitForm from "./SubmitForm";
 import RequestDetails1 from "./RequestDetails1";
@@ -13,6 +12,8 @@ import RequestDetails5 from "./RequestDetails5";
 import RequestDetails6 from "./RequestDetails6";
 import RequestDetails7 from "./RequestDetails7";
 import Disclosure from "./Disclosure";
+import UserDob from "./UserDob";
+
 export default class Signup extends Component {
   state = {
     step: 1,
@@ -56,6 +57,8 @@ export default class Signup extends Component {
       state,
       zipcode,
       requestedClinic,
+      dob,
+      requestOwnRecord,
     } = this.state;
 
     const values = {
@@ -68,6 +71,8 @@ export default class Signup extends Component {
       state,
       zipcode,
       requestedClinic,
+      dob,
+      requestOwnRecord,
     };
 
     let handleSubmit = async (e) => {
@@ -123,7 +128,7 @@ export default class Signup extends Component {
         );
       case 4:
         return (
-          <RequestedClinic
+          <UserDob
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -132,7 +137,7 @@ export default class Signup extends Component {
         );
       case 5:
         return (
-          <RequestDetails1
+          <RequestedClinic
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -141,7 +146,7 @@ export default class Signup extends Component {
         );
       case 6:
         return (
-          <RequestDetails2
+          <RequestDetails1
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -150,7 +155,7 @@ export default class Signup extends Component {
         );
       case 7:
         return (
-          <RequestDetails3
+          <RequestDetails2
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -159,7 +164,7 @@ export default class Signup extends Component {
         );
       case 8:
         return (
-          <RequestDetails4
+          <RequestDetails3
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -168,7 +173,7 @@ export default class Signup extends Component {
         );
       case 9:
         return (
-          <RequestDetails5
+          <RequestDetails4
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -177,7 +182,7 @@ export default class Signup extends Component {
         );
       case 10:
         return (
-          <RequestDetails6
+          <RequestDetails5
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -186,7 +191,7 @@ export default class Signup extends Component {
         );
       case 11:
         return (
-          <RequestDetails7
+          <RequestDetails6
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -195,7 +200,7 @@ export default class Signup extends Component {
         );
       case 12:
         return (
-          <Disclosure
+          <RequestDetails7
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -204,7 +209,7 @@ export default class Signup extends Component {
         );
       case 13:
         return (
-          <SubmitForm
+          <Disclosure
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -212,6 +217,15 @@ export default class Signup extends Component {
           />
         );
       case 14:
+        return (
+          <SubmitForm
+            prevStep={this.prevStep}
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 15:
         return (
           <div className="App">
             <form onSubmit={handleSubmit}>

@@ -38,6 +38,7 @@ const RequestDetails1 = ({ prevStep, nextStep, handleChange, values }) => {
                   aria-labelledby="demo-radio-buttons-group-label"
                   defaultValue="yes"
                   name="radio-buttons-group"
+                  onChange={handleChange("requestOwnRecord")}
                 >
                   <FormControlLabel
                     value="yes"

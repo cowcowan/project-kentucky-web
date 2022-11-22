@@ -34,6 +34,7 @@ const SubmitForm = ({ prevStep, nextStep, handleChange, values }) => {
           state: values.state,
           zipcode: values.zipcode,
           requestedClinic: values.requestedClinic,
+          dob: values.dob,
         }),
       });
       if (res.status === 201) {
