@@ -59,6 +59,7 @@ export default class Signup extends Component {
       requestedClinic,
       dob,
       requestOwnRecord,
+      timeframe,
     } = this.state;
 
     const values = {
@@ -73,6 +74,7 @@ export default class Signup extends Component {
       requestedClinic,
       dob,
       requestOwnRecord,
+      timeframe,
     };
 
     let handleSubmit = async (e) => {
