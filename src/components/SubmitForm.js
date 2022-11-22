@@ -37,6 +37,11 @@ const SubmitForm = ({ prevStep, nextStep, handleChange, values }) => {
           dob: values.dob,
           timeframe: values.timeframe,
           requestOwnRecord: values.requestOwnRecord,
+          reasonForRequest: values.reasonForRequest,
+          recordType: values.recordType,
+          expireDate: values.expireDate,
+          recipient: values.recipient,
+          deliverMethod: values.deliverMethod,
         }),
       });
       if (res.status === 201) {

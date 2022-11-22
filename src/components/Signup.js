@@ -60,6 +60,11 @@ export default class Signup extends Component {
       dob,
       requestOwnRecord,
       timeframe,
+      reasonForRequest,
+      recordType,
+      expireDate,
+      recipient,
+      deliverMethod,
     } = this.state;
 
     const values = {
@@ -75,6 +80,11 @@ export default class Signup extends Component {
       dob,
       requestOwnRecord,
       timeframe,
+      reasonForRequest,
+      recordType,
+      expireDate,
+      recipient,
+      deliverMethod,
     };
 
     let handleSubmit = async (e) => {

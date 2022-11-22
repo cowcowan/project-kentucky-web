@@ -36,8 +36,9 @@ const RequestDetails1 = ({ prevStep, nextStep, handleChange, values }) => {
                 <FormLabel id="demo-radio-buttons-group-label"></FormLabel>
                 <RadioGroup
                   aria-labelledby="demo-radio-buttons-group-label"
-                  defaultValue="after180days"
                   name="radio-buttons-group"
+                  row
+                  onChange={handleChange("deliverMethod")}
                 >
                   <FormControlLabel
                     value="eDelivery"
