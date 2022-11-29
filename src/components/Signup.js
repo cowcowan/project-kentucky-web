@@ -157,16 +157,16 @@ export default class Signup extends Component {
             values={values}
           />
         );
+      // case 8:
+      //   return (
+      //     <RequestedClinic
+      //       prevStep={this.prevStep}
+      //       nextStep={this.nextStep}
+      //       handleChange={this.handleChange}
+      //       values={values}
+      //     />
+      //   );
       case 8:
-        return (
-          <RequestedClinic
-            prevStep={this.prevStep}
-            nextStep={this.nextStep}
-            handleChange={this.handleChange}
-            values={values}
-          />
-        );
-      case 9:
         return (
           <RequestDetails1
             prevStep={this.prevStep}
@@ -175,7 +175,7 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 10:
+      case 9:
         return (
           <RequestDetails2
             prevStep={this.prevStep}
@@ -184,7 +184,7 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 11:
+      case 10:
         return (
           <RequestDetails3
             prevStep={this.prevStep}
@@ -193,16 +193,16 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 12:
-        return (
-          <RequestDetails4
-            prevStep={this.prevStep}
-            nextStep={this.nextStep}
-            handleChange={this.handleChange}
-            values={values}
-          />
-        );
-      case 13:
+      // case 12:
+      //   return (
+      //     <RequestDetails4
+      //       prevStep={this.prevStep}
+      //       nextStep={this.nextStep}
+      //       handleChange={this.handleChange}
+      //       values={values}
+      //     />
+      //   );
+      case 11:
         return (
           <RequestDetails5
             prevStep={this.prevStep}
@@ -211,7 +211,7 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 14:
+      case 12:
         return (
           <RequestDetails6
             prevStep={this.prevStep}
@@ -220,7 +220,7 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 15:
+      case 13:
         return (
           <RequestDetails7
             prevStep={this.prevStep}
@@ -229,7 +229,7 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 16:
+      case 14:
         return (
           <Disclosure
             prevStep={this.prevStep}
@@ -238,7 +238,7 @@ export default class Signup extends Component {
             values={values}
           />
         );
-      case 17:
+      case 15:
         return (
           <SubmitForm
             prevStep={this.prevStep}
