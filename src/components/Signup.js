@@ -69,6 +69,7 @@ export default class Signup extends Component {
       deliverMethod,
       ssn,
       phoneNumber,
+      location,
     } = this.state;
 
     const values = {
@@ -91,6 +92,7 @@ export default class Signup extends Component {
       deliverMethod,
       ssn,
       phoneNumber,
+      location,
     };
 
     switch (step) {

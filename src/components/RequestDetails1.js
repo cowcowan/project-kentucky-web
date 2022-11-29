@@ -26,7 +26,7 @@ const RequestDetails1 = ({ prevStep, nextStep, handleChange, values }) => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h6">
-          Are you requesting your own records?
+          Great, which location would you like to request from?
         </Typography>
 
         <form>
@@ -38,17 +38,27 @@ const RequestDetails1 = ({ prevStep, nextStep, handleChange, values }) => {
                   aria-labelledby="demo-radio-buttons-group-label"
                   name="radio-buttons-group"
                   row
-                  onChange={handleChange("requestOwnRecord")}
+                  onChange={handleChange("location")}
                 >
                   <FormControlLabel
-                    value="yes"
+                    value="emory_university_hospital"
                     control={<Radio />}
-                    label="Yes (I'm the patient)"
+                    label="Emory University Hospital"
                   />
                   <FormControlLabel
-                    value="no"
+                    value="emory_children-center"
                     control={<Radio />}
-                    label="No (I'm not the patient)"
+                    label="Emory Children’s Center"
+                  />
+                  <FormControlLabel
+                    value="emory_johns_creek_hospital"
+                    control={<Radio />}
+                    label="Emory Johns Creek Hospital"
+                  />
+                  <FormControlLabel
+                    value="emory_university_hospital_midtown"
+                    control={<Radio />}
+                    label="Emory University Hospital Midtown"
                   />
                 </RadioGroup>
               </FormControl>
