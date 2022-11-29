@@ -16,6 +16,7 @@ import UserDob from "./UserDob";
 import LandingPage from "./LandingPage";
 import UserSSN from "./UserSSN";
 import UserPhoneNumber from "./UserPhoneNumber";
+import RequestDetails8 from "./RequestDetails8";
 export default class Signup extends Component {
   state = {
     step: 1,
@@ -70,6 +71,7 @@ export default class Signup extends Component {
       ssn,
       phoneNumber,
       location,
+      expire,
     } = this.state;
 
     const values = {
@@ -93,6 +95,7 @@ export default class Signup extends Component {
       ssn,
       phoneNumber,
       location,
+      expire,
     };
 
     switch (step) {
@@ -231,7 +234,7 @@ export default class Signup extends Component {
         );
       case 14:
         return (
-          <Disclosure
+          <RequestDetails8
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -239,6 +242,15 @@ export default class Signup extends Component {
           />
         );
       case 15:
+        return (
+          <Disclosure
+            prevStep={this.prevStep}
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 16:
         return (
           <SubmitForm
             prevStep={this.prevStep}

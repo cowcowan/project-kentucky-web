@@ -45,6 +45,7 @@ const SubmitForm = ({ prevStep, nextStep, handleChange, values }) => {
           ssn: values.ssn,
           phoneNumber: values.phoneNumber,
           location: values.location,
+          expire: values.expire,
         }),
       });
       if (res.status === 201) {
