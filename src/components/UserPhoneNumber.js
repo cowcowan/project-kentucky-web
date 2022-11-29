@@ -22,7 +22,7 @@ export const UserPhone = ({ prevStep, nextStep, handleChange, values }) => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h5">
-          Phone Number
+          What is your phone number?
         </Typography>
         <form>
           <Grid container spacing={2}>

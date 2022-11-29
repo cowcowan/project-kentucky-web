@@ -22,7 +22,7 @@ export const UserEmail = ({ prevStep, nextStep, handleChange, values }) => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h5">
-          Email
+          What is your email?
         </Typography>
         <form>
           <Grid container spacing={2}>

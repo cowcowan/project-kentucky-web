@@ -22,7 +22,7 @@ const UserAddress = ({ prevStep, nextStep, handleChange, values }) => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h5">
-          Mailing Address
+          What is your mailing address?
         </Typography>
         <form>
           {/* Address */}

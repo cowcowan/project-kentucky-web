@@ -34,7 +34,7 @@ const Disclosure = ({ prevStep, nextStep, handleChange, values }) => {
         <form>
           <Grid container spacing={2}>
             <TextField
-              placeholder="I understand that the medical record released pursuant to this authorization could contain information concerning drug related conditions, alcoholism, psychological conditions, psychiatric conditions, and/or blood borne infectious disease, which are subject to federal and/or state restrictions on disclosure. I hereby affirm that I have read and fully understand the above statements and consent to the disclosure of the medical record for the purpose and extent stated above."
+              placeholder="I understand that the medical record released pursuant to this authorization could contain sensitive information. I hereby affirm that I have read and fully understand the above statements and consent to the disclosure of the medical record for the purpose and extent stated above."
               multiline
               rows={5}
               rowsMax={10}
