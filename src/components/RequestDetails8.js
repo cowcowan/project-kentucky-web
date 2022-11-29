@@ -29,11 +29,11 @@ const RequestDetails8 = ({ prevStep, nextStep, handleChange, values }) => {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
-                placeholder="timeframe"
-                label="timeframe"
-                onChange={handleChange("timeframe")}
-                defaultValue={values.timeframe}
-                autoComplete="timeframe"
+                placeholder="expire"
+                label="expire"
+                onChange={handleChange("expire")}
+                defaultValue={values.expire}
+                autoComplete="expire"
                 fullWidth
               />
             </Grid>
