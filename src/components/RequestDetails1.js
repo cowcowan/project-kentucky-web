@@ -46,7 +46,7 @@ const RequestDetails1 = ({ prevStep, nextStep, handleChange, values }) => {
                     label="Emory University Hospital"
                   />
                   <FormControlLabel
-                    value="emory_children-center"
+                    value="emory_children_center"
                     control={<Radio />}
                     label="Emory Children’s Center"
                   />
