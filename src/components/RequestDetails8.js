@@ -22,7 +22,7 @@ const RequestDetails8 = ({ prevStep, nextStep, handleChange, values }) => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h6">
-          When should this request expire?
+          When should this request expire? (mm/dd/yyyy)
         </Typography>
 
         <form>
