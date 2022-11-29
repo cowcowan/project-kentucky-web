@@ -14,6 +14,7 @@ import RequestDetails7 from "./RequestDetails7";
 import Disclosure from "./Disclosure";
 import UserDob from "./UserDob";
 import LandingPage from "./LandingPage";
+import UserSSN from "./UserSSN";
 
 export default class Signup extends Component {
   state = {
@@ -66,6 +67,7 @@ export default class Signup extends Component {
       expireDate,
       recipient,
       deliverMethod,
+      ssn,
     } = this.state;
 
     const values = {
@@ -86,6 +88,7 @@ export default class Signup extends Component {
       expireDate,
       recipient,
       deliverMethod,
+      ssn,
     };
 
     switch (step) {
@@ -134,7 +137,7 @@ export default class Signup extends Component {
         );
       case 6:
         return (
-          <RequestedClinic
+          <UserSSN
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -143,7 +146,7 @@ export default class Signup extends Component {
         );
       case 7:
         return (
-          <RequestDetails1
+          <RequestedClinic
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -152,7 +155,7 @@ export default class Signup extends Component {
         );
       case 8:
         return (
-          <RequestDetails2
+          <RequestDetails1
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -161,7 +164,7 @@ export default class Signup extends Component {
         );
       case 9:
         return (
-          <RequestDetails3
+          <RequestDetails2
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -170,7 +173,7 @@ export default class Signup extends Component {
         );
       case 10:
         return (
-          <RequestDetails4
+          <RequestDetails3
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -179,7 +182,7 @@ export default class Signup extends Component {
         );
       case 11:
         return (
-          <RequestDetails5
+          <RequestDetails4
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -188,7 +191,7 @@ export default class Signup extends Component {
         );
       case 12:
         return (
-          <RequestDetails6
+          <RequestDetails5
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -197,7 +200,7 @@ export default class Signup extends Component {
         );
       case 13:
         return (
-          <RequestDetails7
+          <RequestDetails6
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -206,7 +209,7 @@ export default class Signup extends Component {
         );
       case 14:
         return (
-          <Disclosure
+          <RequestDetails7
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -214,6 +217,15 @@ export default class Signup extends Component {
           />
         );
       case 15:
+        return (
+          <Disclosure
+            prevStep={this.prevStep}
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 16:
         return (
           <SubmitForm
             prevStep={this.prevStep}

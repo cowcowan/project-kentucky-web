@@ -42,6 +42,7 @@ const SubmitForm = ({ prevStep, nextStep, handleChange, values }) => {
           expireDate: values.expireDate,
           recipient: values.recipient,
           deliverMethod: values.deliverMethod,
+          ssn: values.ssn,
         }),
       });
       if (res.status === 201) {
